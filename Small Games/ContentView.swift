@@ -4,7 +4,8 @@ import SwiftUI
 class SpellingBeeScene: SKScene {
 
     private var label: SKLabelNode!
-    private var spinnyNode : SKShapeNode?
+    private var spinnyNode: SKShapeNode?
+    private var honeycomb: Honeycomb!
 
     /// The scene initializer and the color-node child need to have
     /// the same size, but I'm not sure how to *derive* the size,
@@ -26,7 +27,8 @@ class SpellingBeeScene: SKScene {
             color: UIColor.systemIndigo,
             size: assumedScreenSize))
 
-        addChild(Honeycomb(letters: ["H", "A", "E", "C", "M", "L", "Y"]))
+        honeycomb = Honeycomb(letters: ["H", "A", "E", "C", "M", "L", "Y"])
+        addChild(honeycomb)
 
         label = SKLabelNode(text: "Hello, world! \(view.bounds.size)")
         addChild(label)
@@ -70,7 +72,15 @@ class SpellingBeeScene: SKScene {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let label = label {
+            label.run(pulse(), withKey: "fadeInOut")
+        }
         for t in touches { touchDown(atPoint: t.location(in: self)) }
+        for h in honeycomb.allCells {
+            h.run(
+                Bool.random() ? squishCW() : squishCCW(),
+                withKey: "Squish")
+        }
     }
 
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -79,6 +89,10 @@ class SpellingBeeScene: SKScene {
 
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { touchUp(atPoint: t.location(in: self)) }
+
+        for h in honeycomb.allCells {
+            h.run(restore(), withKey: "Restore")
+        }
     }
 
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {

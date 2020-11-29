@@ -9,6 +9,7 @@ class Honeycomb: SKNode {
 
     let primaryCell: SKShapeNode
     let secondaryCells: [SKShapeNode]
+    var allCells: [SKShapeNode] { [primaryCell] + secondaryCells }
 
     init(letters: [String]) {
         // the center
