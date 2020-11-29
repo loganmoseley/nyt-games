@@ -86,6 +86,10 @@ class SpellingBeeScene: SKScene {
     }
 }
 
+/// Wraps the SpriteKit scene.
+///
+/// Can't extract this because Previews are unhappy. I guess Previews use @objc
+/// reflection, which is incompatible with generic types.
 class SpellingBeeViewController: UIViewController {
 
     var skView: SKView! // self.view
@@ -99,26 +103,10 @@ class SpellingBeeViewController: UIViewController {
     }
 }
 
-struct SpellingBeeView: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> SpellingBeeViewController {
-        SpellingBeeViewController()
-    }
-
-    func updateUIViewController(_ uiViewController: SpellingBeeViewController, context: Context) {
-
-    }
-}
-
-struct ContentView: View {
-    var body: some View {
-        SpellingBeeView()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
+struct SpellingBeeScene_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
+            BasicVCView<SpellingBeeViewController>()
         }
     }
 }

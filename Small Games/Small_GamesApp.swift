@@ -4,7 +4,7 @@ import SwiftUI
 struct Small_GamesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BasicVCView<SpellingBeeViewController>()
         }
     }
 }
