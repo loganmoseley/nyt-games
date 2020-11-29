@@ -13,6 +13,8 @@
 		7040E24C2573E1E5009F3151 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7040E24B2573E1E5009F3151 /* Preview Assets.xcassets */; };
 		7040E2572573E1E5009F3151 /* Small_GamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E2562573E1E5009F3151 /* Small_GamesTests.swift */; };
 		7040E2622573E1E5009F3151 /* Small_GamesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E2612573E1E5009F3151 /* Small_GamesUITests.swift */; };
+		7040E2882573FC00009F3151 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E2872573FC00009F3151 /* Drawing.swift */; };
+		7040E28D2573FF70009F3151 /* Honeycomb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E28C2573FF70009F3151 /* Honeycomb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		7040E25D2573E1E5009F3151 /* Small GamesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Small GamesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7040E2612573E1E5009F3151 /* Small_GamesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Small_GamesUITests.swift; sourceTree = "<group>"; };
 		7040E2632573E1E5009F3151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7040E2872573FC00009F3151 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
+		7040E28C2573FF70009F3151 /* Honeycomb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Honeycomb.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				7040E2442573E1E4009F3151 /* Small_GamesApp.swift */,
 				7040E2462573E1E5009F3151 /* ContentView.swift */,
+				7040E2872573FC00009F3151 /* Drawing.swift */,
+				7040E28C2573FF70009F3151 /* Honeycomb.swift */,
 				7040E2482573E1E5009F3151 /* Assets.xcassets */,
 				7040E24D2573E1E5009F3151 /* Info.plist */,
 				7040E24A2573E1E5009F3151 /* Preview Content */,
@@ -261,6 +267,8 @@
 			files = (
 				7040E2472573E1E5009F3151 /* ContentView.swift in Sources */,
 				7040E2452573E1E4009F3151 /* Small_GamesApp.swift in Sources */,
+				7040E28D2573FF70009F3151 /* Honeycomb.swift in Sources */,
+				7040E2882573FC00009F3151 /* Drawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

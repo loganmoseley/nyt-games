@@ -1,7 +1,6 @@
 import SpriteKit
 import SwiftUI
 
-
 class SpellingBeeScene: SKScene {
 
     private var label: SKLabelNode!
@@ -10,7 +9,7 @@ class SpellingBeeScene: SKScene {
     /// The scene initializer and the color-node child need to have
     /// the same size, but I'm not sure how to *derive* the size,
     /// so just punching something in for now.
-    private let assumedScreenSize = CGSize(width: 320, height: 548)
+    private let assumedScreenSize = CGSize(width: 640, height: 1096)
 
     override init() {
         super.init(size: assumedScreenSize)
@@ -22,10 +21,12 @@ class SpellingBeeScene: SKScene {
 
     override func didMove(to view: SKView) {
         super.didMove(to: view)
-
+        
         addChild(SKSpriteNode(
             color: UIColor.systemIndigo,
             size: assumedScreenSize))
+
+        addChild(Honeycomb(letters: ["H", "A", "E", "C", "M", "L", "Y"]))
 
         label = SKLabelNode(text: "Hello, world! \(view.bounds.size)")
         addChild(label)
