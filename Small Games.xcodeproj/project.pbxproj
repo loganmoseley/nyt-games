@@ -17,6 +17,7 @@
 		7040E28D2573FF70009F3151 /* Honeycomb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E28C2573FF70009F3151 /* Honeycomb.swift */; };
 		7040E29525740444009F3151 /* BasicVCRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E29425740444009F3151 /* BasicVCRepresentable.swift */; };
 		7040E29A2574059A009F3151 /* SKActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E2992574059A009F3151 /* SKActions.swift */; };
+		7062EAE02579C4C000A6DB14 /* MushroomHunter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062EADF2579C4C000A6DB14 /* MushroomHunter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7040E28C2573FF70009F3151 /* Honeycomb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Honeycomb.swift; sourceTree = "<group>"; };
 		7040E29425740444009F3151 /* BasicVCRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicVCRepresentable.swift; sourceTree = "<group>"; };
 		7040E2992574059A009F3151 /* SKActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKActions.swift; sourceTree = "<group>"; };
+		7062EADF2579C4C000A6DB14 /* MushroomHunter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomHunter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				7040E29425740444009F3151 /* BasicVCRepresentable.swift */,
 				7040E2872573FC00009F3151 /* Drawing.swift */,
 				7040E28C2573FF70009F3151 /* Honeycomb.swift */,
+				7062EADF2579C4C000A6DB14 /* MushroomHunter.swift */,
 				7040E2992574059A009F3151 /* SKActions.swift */,
 				7040E2462573E1E5009F3151 /* SpellingBee.swift */,
 				7040E2482573E1E5009F3151 /* Assets.xcassets */,
@@ -273,6 +276,7 @@
 			files = (
 				7040E2472573E1E5009F3151 /* SpellingBee.swift in Sources */,
 				7040E2452573E1E4009F3151 /* Small_GamesApp.swift in Sources */,
+				7062EAE02579C4C000A6DB14 /* MushroomHunter.swift in Sources */,
 				7040E28D2573FF70009F3151 /* Honeycomb.swift in Sources */,
 				7040E29A2574059A009F3151 /* SKActions.swift in Sources */,
 				7040E2882573FC00009F3151 /* Drawing.swift in Sources */,
