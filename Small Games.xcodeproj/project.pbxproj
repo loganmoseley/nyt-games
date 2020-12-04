@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7040E2452573E1E4009F3151 /* Small_GamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E2442573E1E4009F3151 /* Small_GamesApp.swift */; };
-		7040E2472573E1E5009F3151 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E2462573E1E5009F3151 /* ContentView.swift */; };
+		7040E2472573E1E5009F3151 /* SpellingBee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E2462573E1E5009F3151 /* SpellingBee.swift */; };
 		7040E2492573E1E5009F3151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7040E2482573E1E5009F3151 /* Assets.xcassets */; };
 		7040E24C2573E1E5009F3151 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7040E24B2573E1E5009F3151 /* Preview Assets.xcassets */; };
 		7040E2572573E1E5009F3151 /* Small_GamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E2562573E1E5009F3151 /* Small_GamesTests.swift */; };
@@ -16,7 +16,7 @@
 		7040E2882573FC00009F3151 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E2872573FC00009F3151 /* Drawing.swift */; };
 		7040E28D2573FF70009F3151 /* Honeycomb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E28C2573FF70009F3151 /* Honeycomb.swift */; };
 		7040E29525740444009F3151 /* BasicVCRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E29425740444009F3151 /* BasicVCRepresentable.swift */; };
-		7040E29A2574059A009F3151 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E2992574059A009F3151 /* Actions.swift */; };
+		7040E29A2574059A009F3151 /* SKActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7040E2992574059A009F3151 /* SKActions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		7040E2412573E1E4009F3151 /* Small Games.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Small Games.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7040E2442573E1E4009F3151 /* Small_GamesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Small_GamesApp.swift; sourceTree = "<group>"; };
-		7040E2462573E1E5009F3151 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7040E2462573E1E5009F3151 /* SpellingBee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingBee.swift; sourceTree = "<group>"; };
 		7040E2482573E1E5009F3151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7040E24B2573E1E5009F3151 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7040E24D2573E1E5009F3151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		7040E2872573FC00009F3151 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		7040E28C2573FF70009F3151 /* Honeycomb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Honeycomb.swift; sourceTree = "<group>"; };
 		7040E29425740444009F3151 /* BasicVCRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicVCRepresentable.swift; sourceTree = "<group>"; };
-		7040E2992574059A009F3151 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		7040E2992574059A009F3151 /* SKActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKActions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				7040E2442573E1E4009F3151 /* Small_GamesApp.swift */,
-				7040E2992574059A009F3151 /* Actions.swift */,
 				7040E29425740444009F3151 /* BasicVCRepresentable.swift */,
-				7040E2462573E1E5009F3151 /* ContentView.swift */,
 				7040E2872573FC00009F3151 /* Drawing.swift */,
 				7040E28C2573FF70009F3151 /* Honeycomb.swift */,
+				7040E2992574059A009F3151 /* SKActions.swift */,
+				7040E2462573E1E5009F3151 /* SpellingBee.swift */,
 				7040E2482573E1E5009F3151 /* Assets.xcassets */,
 				7040E24D2573E1E5009F3151 /* Info.plist */,
 				7040E24A2573E1E5009F3151 /* Preview Content */,
@@ -271,10 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7040E2472573E1E5009F3151 /* ContentView.swift in Sources */,
+				7040E2472573E1E5009F3151 /* SpellingBee.swift in Sources */,
 				7040E2452573E1E4009F3151 /* Small_GamesApp.swift in Sources */,
 				7040E28D2573FF70009F3151 /* Honeycomb.swift in Sources */,
-				7040E29A2574059A009F3151 /* Actions.swift in Sources */,
+				7040E29A2574059A009F3151 /* SKActions.swift in Sources */,
 				7040E2882573FC00009F3151 /* Drawing.swift in Sources */,
 				7040E29525740444009F3151 /* BasicVCRepresentable.swift in Sources */,
 			);
